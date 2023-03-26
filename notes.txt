@@ -1,0 +1,6 @@
+Changed nameserver @ one.com to their default ns (ns01.one.com) from ns1.bdm.microsoftonline.com on 2023-03-05.
+Check back tomorrow morning to see if anything is improved.
+
+Changed back to MS dns servers.
+
+Hello world
