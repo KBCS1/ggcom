@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "GGCOM webpage",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0.0 <18"
+  },
   "dependencies": {
     "balanced-match": "^1.0.2",
     "brace-expansion": "^1.1.11",
@@ -39,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KBCS1/ggcom.git"
+    "url": "https://github.com/KBCS1/ggcom"
   },
   "author": "Kim Berntson",
   "license": "ISC",
