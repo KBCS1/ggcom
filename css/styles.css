@@ -341,7 +341,7 @@ header, main, section, footer, article {
 
 /* Hamburger menu */
 
-.menu1 {
+.nav-menu {
   width: 100%;
   background-color: var(--bluegray);
   margin: 0;
@@ -362,11 +362,11 @@ header, main, section, footer, article {
   transition: all 0.3s ease;
 }
 
-.menu1 a:first-child {
+.nav-menu a:first-child {
   margin: 0px;
 }
 
-.menu1 a:last-child {
+.nav-menu a:last-child {
   margin-bottom: 20px;
 }
 
@@ -498,7 +498,7 @@ header, main, section, footer, article {
   transform: scale(0);
 }
 
-#toggle1:checked ~ .menu1 {
+#toggle1:checked ~ .nav-menu {
   height: 240px;
   margin-top: 10px;
 }
