@@ -505,7 +505,7 @@ header, main, section, footer, article {
 
 /* MQ tablets */
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 
   h1 {
     font-size: 1.5rem;
@@ -549,11 +549,11 @@ header, main, section, footer, article {
 
   .ct-flex {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* padding: 0 20px; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
-    /* flex: 1 2 200px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 2 200px;
   }
 
   .ct-item {
@@ -567,14 +567,14 @@ header, main, section, footer, article {
     flex-direction: row;
     flex-wrap: wrap;
     /* width: 800px; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 
   .fourfield-item {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 20px;
-    min-width: 250px;
-    max-width: 40%;
+    /* min-width: 250px; */
+    /* max-width: 40%; */
   }
 }
 
@@ -582,7 +582,7 @@ header, main, section, footer, article {
 
 /* MQ smartphones */
 
-@media screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -665,12 +665,17 @@ header, main, section, footer, article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* justify-content: space-between; */
   }
-
+  
   .fourfield-item {
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 15px;
+    margin: 0;
+    padding: 20px 15%;
+    min-width: auto;
+    max-width: auto;
   }
 
   .footer-item {
