@@ -347,6 +347,10 @@ header, main, section, footer, article {
   transition: all 0.3s ease;
 }
 
+.ham-menu {
+  display: none;
+}
+
 .nav-menu a:first-child {
   margin: 0px;
 }
@@ -506,7 +510,7 @@ header, main, section, footer, article {
     display: flex;
   }
 
-  /* .p-menu1 {
+  /* .ham-menu {
       display:none;
   } */
 
@@ -618,7 +622,7 @@ header, main, section, footer, article {
     display: none;
   }
 
-  .p-menu1 {
+  .ham-menu {
     display: flex;
   }
  
