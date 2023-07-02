@@ -2,30 +2,26 @@
   "name": "ggcom",
   "version": "1.0.0",
   "description": "GGCOM webpage",
-  "main": "index.html",
+  "main": "index.js",
   "engines": {
-    "node": ">=18.0.0",
-    "php" : "=>8.0.0"
+    "node": ">=16.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build",
-    "build-prod": "npm run build app.js --configuration=production"
-    
-  
-},
-
-  
+    "build-prod": "npm run build --configuration=production"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KBCS1/ggcom"
+    "url": "git+https://github.com/KBCS1/ggcom.git"
   },
   "author": "Kim Berntson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KBCS1/ggcom/issues"
   },
-  "homepage": "https://github.com/KBCS1/ggcom#readme"
+  "homepage": "https://github.com/KBCS1/ggcom#readme",
+  "dependencies": {
+    "package.json": "^0.0.0"
+  }
 }
