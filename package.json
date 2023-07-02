@@ -39,10 +39,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ng": "ng",
-    "build": "ng build",
-    "build-prod": "ng build --configuration=production",
-    "build-dev": "ng build --configuration=dev"
+    "build": "npm run build",
+    "build-prod": "npm run build --configuration=production"
+  
 },
 
   
