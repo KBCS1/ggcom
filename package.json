@@ -2,9 +2,10 @@
   "name": "ggcom",
   "version": "1.0.0",
   "description": "GGCOM webpage",
-  "main": "index.js",
+  "main": "index.html",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0",
+    "php" : "=>8.0.0"
   },
   "dependencies": {
     "balanced-match": "^1.0.2",
