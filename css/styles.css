@@ -393,23 +393,23 @@ header, main, section, footer, article {
 /* ID definitions */
 
 #home-intro {
-  background-image: url("/img/88045b27c0.png");
+  background-image: url("../img/88045b27c0.png");
 }
 
 #leadership-intro {
-  background-image: url("/img/xcited\ creative\ business\ people\ giving\ high-five\ in\ meeting\ room\ at\ creative\ office\ -\ edited.jpg");
+  background-image: url("../img/xcited\ creative\ business\ people\ giving\ high-five\ in\ meeting\ room\ at\ creative\ office\ -\ edited.jpg");
 }
 
 #communication-intro {
-  background-image: url("/img/High\ angle\ view\ of\ young\ partners\ discussing\ in\ meeting\ room\ at\ creative\ office-resized.jpg");
+  background-image: url("../img/High\ angle\ view\ of\ young\ partners\ discussing\ in\ meeting\ room\ at\ creative\ office-resized.jpg");
 }
 
 #creativity-intro {
-  background-image: url("/img/two\ colleagues\ interior\ designer\ discussing\ data\ and\ digital\ tablet\ and\ computer\ laptop\ with\ sample\ material\ and\ digital\ design\ diagram\ on\ wooden\ desk\ as\ concept\ -\ resized.jpg");
+  background-image: url("../img/two\ colleagues\ interior\ designer\ discussing\ data\ and\ digital\ tablet\ and\ computer\ laptop\ with\ sample\ material\ and\ digital\ design\ diagram\ on\ wooden\ desk\ as\ concept\ -\ resized.jpg");
 }
 
 #contact-intro {
-  background-image: url("/img/Smiling\ young\ man\ using\ digital\ tablet\ in\ the\ office\ rezised.jpg");
+  background-image: url("../img/Smiling\ young\ man\ using\ digital\ tablet\ in\ the\ office\ rezised.jpg");
 }
 
 #linda-pic {
@@ -427,7 +427,7 @@ header, main, section, footer, article {
 }
 
 #home-ledarskap {
-  background-image: url("/img/414ad0316b.png");
+  background-image: url("../img/414ad0316b.png");
   color: var(--cream);
 
   /* height: 200px; */
@@ -436,7 +436,7 @@ header, main, section, footer, article {
 
 #home-kommunikation {
 
-  background-image: url("/img/Smiling\ charismatic\ speaker\ giving\ public\ presentation\ in\ conference\ hall.jpg");
+  background-image: url("../img/Smiling\ charismatic\ speaker\ giving\ public\ presentation\ in\ conference\ hall.jpg");
     color: var(--cream);
 
   /* height: 200px; */
@@ -445,7 +445,7 @@ header, main, section, footer, article {
 
 #home-kreativitet {
 
-  background-image: url("/img/20190405_065230741_iOS_edited1.jpg");
+  background-image: url("../img/20190405_065230741_iOS_edited1.jpg");
     color: var(--cream);
 
   
