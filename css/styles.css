@@ -82,11 +82,6 @@ input.button:hover {
 }
 
 
-/* 
-nav {
-
-} */
-
 header, main, section, footer, article {
   display: flex;
   flex-flow: row wrap;
@@ -151,14 +146,6 @@ header, main, section, footer, article {
 
 /* ----- class definition ----- */
 
-/* .ct {
-  display: grid;
-  grid-template-columns: 1fr minmax(300px, 80%) 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "a b c";
-  padding: 50px;
-} */
-
 .ct-flex {
   display: flex;
   flex-flow: row wrap;
@@ -201,19 +188,6 @@ header, main, section, footer, article {
   justify-content: space-around;
 }
 
-/* 
-.grid-center {
-  grid-area: b;
-}
-
-.grid-left {
-  grid-area: a;
-}
-
-.grid-right {
-  grid-area: c;
-} */
-
 .pad-text {
   padding: 20px 0 0 20px;
 }
@@ -221,13 +195,6 @@ header, main, section, footer, article {
 .tilt {
   vertical-align: 40%;
 }
-
-/* 
-.space-evenly {
-  display: flexbox;
-  justify-items: stretch;
-} */
-
 
 .intro-section {
   display: flex;
@@ -250,8 +217,6 @@ header, main, section, footer, article {
 .fade-in-image {
   animation: fadeIn 0.5s;
 }
-
-
 
 /* Color classes */
 
@@ -300,7 +265,6 @@ header, main, section, footer, article {
 }
 
 /* Hamburger menu */
-
 
 
 .hamburger1 div {
@@ -512,19 +476,10 @@ header, main, section, footer, article {
     max-width: 100%;
   }
 
-/*   
-  .ct-grid {
-    display: grid;
-    grid-template-columns: 0 minmax(300px, 80%) 0; */
-    /* grid-template-rows: auto; */
-    /* grid-template-areas: "a b c";
-    justify-content: space-around;
-    padding: 30px 0;
-  } */
 
 
   .ct-flex {
-    display: g;
+    display: grid;
     /* flex-direction: column; */
     /* padding: 0 20px; */
     flex-wrap: wrap;
@@ -553,8 +508,6 @@ header, main, section, footer, article {
     /* max-width: 40%; */
   }
 }
-
-
 
 /* MQ smartphones */
 
