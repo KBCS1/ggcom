@@ -149,27 +149,33 @@ header, main, section, footer, article {
 .ct-flex {
   display: flex;
   flex-flow: row wrap;
-  padding: 50px 14.5%;
+  padding: 50px 15%;
 }
 
 
 .ct {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 0 50px 0;
+  padding: 30px 0 30px 0;
   justify-content: start;
 }
 
 .footer-flex {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
-  padding: 50px 14.5%;
+  padding: 50px 15%;
   justify-items: center;
 }
 
 .ct-item {
   flex: 1 1 0px;
   padding: 0 20px 0 20px;
+  justify-content: center;
+}
+
+.ct-item-center {
+  flex: 1 1 0px;
+  padding: 0 20px 0 50px;
   justify-content: center;
 }
 
@@ -540,7 +546,7 @@ a {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   main, section, footer, article {
