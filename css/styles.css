@@ -218,6 +218,11 @@ header, main, section, footer, article {
   animation: fadeIn 0.5s;
 }
 
+.wrap {
+  float: left;
+  margin: -10px 10px 0 0;
+}
+
 /* Color classes */
 
 .bluegray {
@@ -518,6 +523,13 @@ header, main, section, footer, article {
   
 {
 
+  h1,
+h2,
+h3,
+p,
+a {
+  line-height: 1.8;
+}
 
   h1 {
     font-size: 1.5rem;
@@ -528,7 +540,19 @@ header, main, section, footer, article {
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  main, section, footer, article {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 8%;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0;
   }
 
   input,
@@ -626,16 +650,6 @@ header, main, section, footer, article {
   }
 
 
-/* 
-  .ct-grid {
-    display: grid;
-    grid-template-columns: 1fr minmax(300px, 80%) 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "a b c";
-    padding: 20px 0 20px 0;
-    justify-content: space-around;
-  } */
-
   .ct-flex {
     display: flex;
     /* flex-direction: column; */
@@ -657,7 +671,7 @@ header, main, section, footer, article {
   
   .fourfield-item {
     margin: 0;
-    padding: 20px 15%;
+    padding: 15px 8% 5px 8%;
     min-width: auto;
     max-width: auto;
   }
@@ -665,8 +679,18 @@ header, main, section, footer, article {
   .opac {
     color: var(--cream);
     background-color: rgba(62, 82, 100, 0.8);
-    padding: 5%
+    padding: 8%;
+    
   }
+  #linda-pic {
+    width: 100px;
+    padding: 20px 0 0 0;
+    margin: 0 10px 0 0;
+  }
+  .wrap {
+    float:right;
+  }
+  
 
   .footer-item {
     display: flex;
@@ -684,7 +708,7 @@ header, main, section, footer, article {
     justify-items: start;
     align-items: center;
     /* flex-direction: column; */
-    padding: 0 15%;
+    padding: 10px 8%;
     /* flex-wrap: wrap; */
     /* justify-content: space-between; */
     /* flex: 1 2 200px; */
