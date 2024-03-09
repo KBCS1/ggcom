@@ -15,7 +15,9 @@ Lightgray: #eeeeee hsl(0,0%,93%) rgba(238,238,238,1)
   --light-blue: #dce5f0;
   --pink: #f5e8e8;
   --pink2: hsl(325, 32%, 93%);
-  --home_icon: <img class="nav-logo" src="../img/GG-logo-symbol-141px-black.png" height="30px" alt="ggcom curly icon" />;
+  --home_icon: <img class= "nav-logo" src=
+    "../img/GG-logo-symbol-141px-black.png" height= "30px" alt=
+    "ggcom curly icon" / >;
 }
 
 * {
@@ -24,7 +26,6 @@ Lightgray: #eeeeee hsl(0,0%,93%) rgba(238,238,238,1)
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   line-height: 3;
   text-decoration: none;
-  
 }
 
 /* HTML tags */
@@ -58,7 +59,6 @@ ul {
   margin-left: 15px;
 }
 
-
 input,
 textarea {
   width: 400px;
@@ -71,7 +71,6 @@ textarea {
 
 textarea {
   height: 200px;
-  
 }
 
 input.button:hover {
@@ -81,13 +80,15 @@ input.button:hover {
   font-size: large;
 }
 
-
-header, main, section, footer, article {
+header,
+main,
+section,
+footer,
+article {
   display: flex;
   flex-flow: row wrap;
   padding: 50px 15%;
 }
-
 
 /* Nav definitions */
 
@@ -129,10 +130,9 @@ header, main, section, footer, article {
   padding: 0 10px;
 }
 
-
 .home-item {
   display: flex;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 200px;
@@ -151,7 +151,6 @@ header, main, section, footer, article {
   flex-flow: row wrap;
   padding: 50px 15%;
 }
-
 
 .ct {
   display: flex;
@@ -182,7 +181,6 @@ header, main, section, footer, article {
 .ct-padding {
   padding: 50px 20%;
 }
-
 
 .footer-item {
   display: flex;
@@ -217,7 +215,7 @@ header, main, section, footer, article {
   color: var(--cream);
   font-size: larger;
   background-color: rgba(62, 82, 100, 0.8);
-  padding: 20PX;
+  padding: 20px;
 }
 
 .fade-in-image {
@@ -277,7 +275,6 @@ header, main, section, footer, article {
 
 /* Hamburger menu */
 
-
 .hamburger1 div {
   background-color: rgb(61, 61, 61);
   color: var(--bluegray);
@@ -289,7 +286,7 @@ header, main, section, footer, article {
   transition: all 0.2s ease-in-out;
 }
 
-/* Hamburger menu */
+
 
 .nav-menu {
   width: 100%;
@@ -324,8 +321,6 @@ header, main, section, footer, article {
   margin-bottom: 20px;
 }
 
-
-
 /* ----- four fielder ----- */
 
 .ct-fourfield {
@@ -343,17 +338,14 @@ header, main, section, footer, article {
   /* max-width: 45%; */
 }
 
-.button
- {
+.button {
   width: 410px;
   font-size: large;
   border: 2px solid var(--cream);
   border-radius: 15px;
   background-color: var(--cream);
   color: var(--bluegray);
-  
 }
-
 
 /* ID definitions */
 
@@ -396,24 +388,18 @@ header, main, section, footer, article {
   color: var(--cream);
 
   /* height: 200px; */
- 
 }
 
 #home-kommunikation {
-
   background-image: url("/img/Smiling\ charismatic\ speaker\ giving\ public\ presentation\ in\ conference\ hall.jpg");
-    color: var(--cream);
+  color: var(--cream);
 
   /* height: 200px; */
- 
 }
 
 #home-kreativitet {
-
   background-image: url("/img/20190405_065230741_iOS_edited1.jpg");
-    color: var(--cream);
-
-  
+  color: var(--cream);
 }
 
 /* ----- Hamburger IDs ----- */
@@ -446,11 +432,7 @@ header, main, section, footer, article {
 
 /* MQ tablets */
 
-@media only screen
-  and (max-width: 768px)
-
-{
-
+@media only screen and (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -487,8 +469,6 @@ header, main, section, footer, article {
     max-width: 100%;
   }
 
-
-
   .ct-flex {
     display: grid;
     /* flex-direction: column; */
@@ -522,20 +502,14 @@ header, main, section, footer, article {
 
 /* MQ smartphones */
 
-@media only screen
-  
-  and (max-width: 414px)
-  
-  
-{
-
+@media only screen and (max-width: 414px) {
   h1,
-h2,
-h3,
-p,
-a {
-  line-height: 1.8;
-}
+  h2,
+  h3,
+  p,
+  a {
+    line-height: 1.8;
+  }
 
   h1 {
     font-size: 1.5rem;
@@ -549,7 +523,10 @@ a {
     font-size: 0.95rem;
   }
 
-  main, section, footer, article {
+  main,
+  section,
+  footer,
+  article {
     display: flex;
     flex-flow: row wrap;
     padding: 20px 8%;
@@ -598,7 +575,7 @@ a {
   a:visited {
     color: var(--bluegray);
   }
-  
+
   .topnav {
     display: flex;
     height: 50px;
@@ -612,8 +589,7 @@ a {
   .ham-menu {
     display: flex;
   }
- 
-  
+
   .hamburger1 {
     height: 30px;
     margin-top: 10px;
@@ -643,7 +619,7 @@ a {
 
   .home-item {
     display: flex;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
     min-height: 100px;
@@ -654,7 +630,6 @@ a {
     /* flex: 1 1 100px; */
     box-shadow: inset 0 0 0 1000px rgba(51, 82, 100, 0.65);
   }
-
 
   .ct-flex {
     display: flex;
@@ -674,7 +649,7 @@ a {
     padding: 0;
     /* justify-content: space-between; */
   }
-  
+
   .fourfield-item {
     margin: 0;
     padding: 15px 8% 5px 8%;
@@ -686,7 +661,6 @@ a {
     color: var(--cream);
     background-color: rgba(62, 82, 100, 0.8);
     padding: 8%;
-    
   }
   #linda-pic {
     width: 100px;
@@ -694,9 +668,8 @@ a {
     margin: 0 10px 0 0;
   }
   .wrap {
-    float:right;
+    float: right;
   }
-  
 
   .footer-item {
     display: flex;
@@ -704,7 +677,6 @@ a {
     /* margin: 10px 0; */
     padding: 0 20px 0 20px;
     justify-content: space-evenly;
-
   }
 
   .footer-flex {
@@ -725,21 +697,18 @@ a {
   }
 
   .link1 {
-  width: 100%;
-  margin: 5px;
-  padding: 10px;
-  font: 700 20px Montserrat, sans-serif;
-  color: var(--cream);
-  z-index: 200;
-
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font: 700 20px Montserrat, sans-serif;
+    color: var(--cream);
+    z-index: 200;
   }
 
   .link1:hover {
-  background-color: var(--cream);
-  color: var(--bluegray);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+    background-color: var(--cream);
+    color: var(--bluegray);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
-
-
 }
