@@ -28,6 +28,12 @@ Lightgray: #eeeeee hsl(0,0%,93%) rgba(238,238,238,1)
   text-decoration: none;
 }
 
+body {
+  width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* HTML tags */
 
 h1,
@@ -83,10 +89,9 @@ input.button:hover {
 header,
 main,
 section,
-footer,
-article {
+footer {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   padding: 50px 15%;
 }
 
@@ -152,12 +157,12 @@ article {
   padding: 50px 15%;
 }
 
-.ct {
+/* .ct {
   display: flex;
   flex-wrap: wrap;
   padding: 30px 0 30px 0;
   justify-content: start;
-}
+} */
 
 .footer-flex {
   display: grid;
@@ -285,8 +290,6 @@ article {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
-
 
 .nav-menu {
   width: 100%;
@@ -433,6 +436,12 @@ article {
 /* MQ tablets */
 
 @media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
@@ -502,7 +511,7 @@ article {
 
 /* MQ smartphones */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 430px) {
   h1,
   h2,
   h3,
@@ -525,10 +534,9 @@ article {
 
   main,
   section,
-  footer,
-  article {
+  footer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 20px 8%;
   }
 
@@ -574,6 +582,14 @@ article {
 
   a:visited {
     color: var(--cream);
+  }
+
+  .ct {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 8%;
+    justify-content: start;
   }
 
   .topnav {
