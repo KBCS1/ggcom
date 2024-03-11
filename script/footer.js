@@ -27,3 +27,10 @@ class Footer extends HTMLElement {
 };
 
 customElements.define('footer-component', Footer);
+
+// Toggle hamburger menu navbar
+
+function toggleNav() {
+  var navbar = document.getElementById("nav");
+  navbar.classList.toggle('show');
+}
