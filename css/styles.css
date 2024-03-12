@@ -15,9 +15,7 @@ Lightgray: #eeeeee hsl(0,0%,93%) rgba(238,238,238,1)
   --light-blue: #dce5f0;
   --pink: #f5e8e8;
   --pink2: hsl(325, 32%, 93%);
-  --home_icon: <img class= "nav-logo" src=
-    "../img/GG-logo-symbol-141px-black.png" height= "30px" alt=
-    "ggcom curly icon" / >;
+  --home_icon: <img class="nav-logo" src="../img/GG-logo-symbol-141px-black.png" height="30px" alt="ggcom curly icon" / >;
 }
 
 * {
@@ -35,6 +33,17 @@ body {
 }
 
 /* HTML tags */
+
+
+header,
+main,
+section,
+footer,
+article {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px 15%;
+}
 
 h1,
 h2,
@@ -86,17 +95,57 @@ input.button:hover {
   font-size: large;
 }
 
-header,
-main,
-section,
-footer,
-article {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 50px 15%;
-}
 
 /* Nav definitions */
+
+/* Hamburger menu */
+
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  color: var(--bluegray);
+  position: relative;
+  width: 35px;
+  height: 4px;
+  margin-top: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+.nav-menu {
+  width: 100%;
+  background-color: var(--bluegray);
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 5px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ham-menu {
+  display: none;
+}
+
+.nav-menu a:first-child {
+  margin: 0px;
+}
+
+.nav-menu a:last-child {
+  margin-bottom: 20px;
+}
+
 
 .topnav {
   display: grid;
@@ -282,53 +331,6 @@ article {
   min-width: 100px;
 }
 
-/* Hamburger menu */
-
-.hamburger1 div {
-  background-color: rgb(61, 61, 61);
-  color: var(--bluegray);
-  position: relative;
-  width: 35px;
-  height: 4px;
-  margin-top: 3px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-
-
-.nav-menu {
-  width: 100%;
-  background-color: var(--bluegray);
-  margin: 0;
-  display: -ms-grid;
-  display: grid;
-  grid-template-rows: 1fr repeat(4, 0.5fr);
-  grid-row-gap: 5px;
-  padding: 0;
-  list-style: none;
-  clear: both;
-  width: auto;
-  text-align: center;
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.4s ease;
-  z-index: 100;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.ham-menu {
-  display: none;
-}
-
-.nav-menu a:first-child {
-  margin: 0px;
-}
-
-.nav-menu a:last-child {
-  margin-bottom: 20px;
-}
 
 /* ----- four fielder ----- */
 
@@ -417,24 +419,24 @@ article {
   display: none;
 }
 
-#toggle1:checked + .hamburger1 .top {
+#toggle1:checked+.hamburger1 .top {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: 12.5px;
 }
 
-#toggle1:checked + .hamburger1 .meat {
+#toggle1:checked+.hamburger1 .meat {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: -5px;
 }
 
-#toggle1:checked + .hamburger1 .bottom {
+#toggle1:checked+.hamburger1 .bottom {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
-#toggle1:checked ~ .nav-menu {
+#toggle1:checked~.nav-menu {
   height: 240px;
   margin-top: 10px;
 }
@@ -455,9 +457,9 @@ article {
   section,
   footer,
   article {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 50px 8%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px 8%;
   }
 
   h1 {
@@ -545,6 +547,15 @@ article {
     margin: auto;
   }
 
+  header,
+  main,
+  section,
+  footer,
+  article {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 8%;
+  }
 
 
   h1,
@@ -567,15 +578,6 @@ article {
     font-size: 0.95rem;
   }
 
-  header,
-  main,
-  section,
-  footer,
-  article {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 20px 8%;
-  }
 
 
 
@@ -654,6 +656,7 @@ article {
     min-width: 100px;
     max-width: 100%;
   }
+
   .nav-logo {
     margin: 10px 0 0 20px;
   }
@@ -679,7 +682,7 @@ article {
     justify-content: start;
     flex-direction: column;
   }
-  
+
 
   .ct-flex {
     display: flex;
@@ -712,11 +715,13 @@ article {
     background-color: rgba(62, 82, 100, 0.8);
     padding: 8%;
   }
+
   #linda-pic {
     width: 100px;
     padding: 20px 0 0 0;
     margin: 0 10px 0 0;
   }
+
   .wrap {
     float: right;
   }
