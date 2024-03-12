@@ -28,12 +28,6 @@ Lightgray: #eeeeee hsl(0,0%,93%) rgba(238,238,238,1)
   text-decoration: none;
 }
 
-body {
-  width: 1000px;
-  margin: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /* HTML tags */
 
 h1,
@@ -89,9 +83,10 @@ input.button:hover {
 header,
 main,
 section,
-footer {
+footer,
+article {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   padding: 50px 15%;
 }
 
@@ -157,12 +152,12 @@ footer {
   padding: 50px 15%;
 }
 
-/* .ct {
+.ct {
   display: flex;
   flex-wrap: wrap;
   padding: 30px 0 30px 0;
   justify-content: start;
-} */
+}
 
 .footer-flex {
   display: grid;
@@ -291,6 +286,8 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
+
+
 .nav-menu {
   width: 100%;
   background-color: var(--bluegray);
@@ -405,17 +402,37 @@ footer {
   color: var(--cream);
 }
 
+/* ----- Hamburger IDs ----- */
 
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 12.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .nav-menu {
+  height: 240px;
+  margin-top: 10px;
+}
 
 /* MQ tablets */
 
 @media only screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    box-shadow: none;
-    margin: 0;
-  }
-
   h1 {
     font-size: 1.5rem;
   }
@@ -485,7 +502,7 @@ footer {
 
 /* MQ smartphones */
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 414px) {
   h1,
   h2,
   h3,
@@ -508,9 +525,10 @@ footer {
 
   main,
   section,
-  footer {
+  footer,
+  article {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     padding: 20px 8%;
   }
 
@@ -556,14 +574,6 @@ footer {
 
   a:visited {
     color: var(--cream);
-  }
-
-  .ct {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px 8%;
-    justify-content: start;
   }
 
   .topnav {
@@ -701,34 +711,4 @@ footer {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-
-  /* ----- Hamburger IDs ----- */
-
-/* #toggle1 {
-  display: flex;
-  flex-direction: column;
-}
-
-#toggle1:checked + .hamburger1 .top {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  margin-top: 12.5px;
-}
-
-#toggle1:checked + .hamburger1 .meat {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-top: -5px;
-}
-
-#toggle1:checked + .hamburger1 .bottom {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-#toggle1:checked ~ .nav-menu {
-  height: 240px;
-  margin-top: 10px;
-} */
-
 }
