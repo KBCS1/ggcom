@@ -39,20 +39,6 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Header/footer section script loads -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      $(function () {
-        $("#footerSection").load("footer.html");
-      });
-    </script>
-
     <!-- web icons -->
 
     <link
@@ -85,7 +71,13 @@
     <!-- Nav section -->
 
     <div class="topnav cream">
-      <a href="index.html"><img class="nav-logo"src="img/GG-logo-symbol-141px-black.png"height="30px"alt=""/></a>
+      <a href="index.html"
+        ><img
+          class="nav-logo"
+          src="img/GG-logo-symbol-141px-black.png"
+          height="30px"
+          alt=""
+      /></a>
 
       <div class="nav-items">
         <a class="nav-item active" href="index.html">Hem</a>
@@ -96,7 +88,7 @@
 
         <div class="ham-menu">
           <nav id="navbar" class="navigation" role="navigation">
-            <input id="toggle1" type="checkbox"/>
+            <input id="toggle1" type="checkbox" />
             <label class="hamburger1" for="toggle1">
               <div class="top"></div>
               <div class="meat"></div>
@@ -158,6 +150,7 @@
       <a class="home-item" id="home-ledarskap" href="ledarskap.html"
         >Ledarskap</a
       >
+
       <a class="home-item" id="home-kommunikation" href="kommunikation.html"
         >Kommunikation</a
       >
@@ -202,44 +195,40 @@
 
     <!-- Vision & et al section -->
 
-    <section class="nanogreen">
-      <div>
-        <div class="ct">
-          <div class="ct-item">
-            <h2>Vår vision</h2>
-            <p>
-              Att bidra till utvecklingen av kompetenta ledare och
-              organisationer med hög integritet, tydlighet och engagemang.
-            </p>
-            <p>
-              Vi gör det genom att kombinera dialog och data med kreativitet och
-              nytänkande för att skapa tydlighet och tillit.
-            </p>
-          </div>
+    <section class="nanogreen ct">
+      <div class="ct-flex">
+        <h2>Vår vision</h2>
+        <p>
+          Att bidra till utvecklingen av kompetenta ledare och organisationer
+          med hög integritet, tydlighet och engagemang.
+        </p>
+        <p>
+          Vi gör det genom att kombinera dialog och data med kreativitet och
+          nytänkande för att skapa tydlighet och tillit.
+        </p>
+      </div>
 
-          <div class="ct-item">
-            <h2>Klienter</h2>
-            <p>
-              Vi arbetar med individer, team och organisationer verksamma inom
-              FMCG, industri, teknik, innovation, skog och finans.
-            </p>
-          </div>
+      <div class="ct-item">
+        <h2>Klienter</h2>
+        <p>
+          Vi arbetar med individer, team och organisationer verksamma inom FMCG,
+          industri, teknik, innovation, skog och finans.
+        </p>
+      </div>
 
-          <div class="ct-item">
-            <h2>Vi spanar på</h2>
-            <ul>
-              <li>
-                <a href="https://intelligence.weforum.org/"
-                  >Strategic Intelligence WEF</a
-                >
-              </li>
-              <li><a href="https://hbr.org/">Harvard Business Review</a></li>
-              <li><a href="https://www.gapminder.org/">Gapminder</a></li>
-              <li><a href="https://www.mindtools.com/">Mindtools</a></li>
-              <li><a href="https://www.kairosfuture.com/">Kairos Future</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="ct-item">
+        <h2>Vi spanar på</h2>
+        <ul>
+          <li>
+            <a href="https://intelligence.weforum.org/"
+              >Strategic Intelligence WEF</a
+            >
+          </li>
+          <li><a href="https://hbr.org/">Harvard Business Review</a></li>
+          <li><a href="https://www.gapminder.org/">Gapminder</a></li>
+          <li><a href="https://www.mindtools.com/">Mindtools</a></li>
+          <li><a href="https://www.kairosfuture.com/">Kairos Future</a></li>
+        </ul>
       </div>
     </section>
 
@@ -248,5 +237,18 @@
     <div id="footerSection"></div>
 
     <script src="" async defer></script>
+    <!-- Header/footer section script loads -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#footerSection").load("footer.html");
+      });
+    </script>
   </body>
 </html>
