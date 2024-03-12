@@ -28,6 +28,12 @@ Lightgray: #eeeeee hsl(0,0%,93%) rgba(238,238,238,1)
   text-decoration: none;
 }
 
+body {
+  width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* HTML tags */
 
 h1,
@@ -502,7 +508,10 @@ article {
 
 /* MQ smartphones */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 430px) {
+
+
+
   h1,
   h2,
   h3,
