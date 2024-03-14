@@ -233,6 +233,10 @@ input.button:hover {
   padding: 50px 20%;
 }
 
+.section {
+  padding: 10px 15%;
+}
+
 .footer-flex {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
@@ -538,6 +542,11 @@ input.button:hover {
     /* min-width: 250px; */
     /* max-width: 40%; */
   }
+
+  .section {
+    padding: 10px 8%;
+
+  }
 }
 
 /* MQ smartphones */
@@ -767,5 +776,10 @@ input.button:hover {
     color: var(--bluegray);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .section {
+    padding: 10px 0;
+
   }
 }
