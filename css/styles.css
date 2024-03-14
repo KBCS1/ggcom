@@ -361,23 +361,25 @@ input.button:hover {
 /* ID definitions */
 
 #home-intro {
-  background-image: url("/img/88045b27c0.png");
+  background-image: url("/img/main-hero.jpg");
+  background-size:cover;
 }
 
 #leadership-intro {
-  background-image: url("/img/xcited\ creative\ business\ people\ giving\ high-five\ in\ meeting\ room\ at\ creative\ office\ -\ edited.jpg");
+  background-image: url("/img/ledarskap-hero.jpg");
+  background-size: cover;
 }
 
 #communication-intro {
-  background-image: url("/img/High\ angle\ view\ of\ young\ partners\ discussing\ in\ meeting\ room\ at\ creative\ office-resized.jpg");
+  background-image: url("/img/kommunikation-hero-resize.jpg");
 }
 
 #creativity-intro {
-  background-image: url("/img/two\ colleagues\ interior\ designer\ discussing\ data\ and\ digital\ tablet\ and\ computer\ laptop\ with\ sample\ material\ and\ digital\ design\ diagram\ on\ wooden\ desk\ as\ concept\ -\ resized.jpg");
+  background-image: url("/img/kreativitet-hero-resize.jpg");
 }
 
 #contact-intro {
-  background-image: url("/img/Smiling\ young\ man\ using\ digital\ tablet\ in\ the\ office\ rezised.jpg");
+  background-image: url("/img/kontakt-hero-resize.jpg");
 }
 
 #linda-pic {
