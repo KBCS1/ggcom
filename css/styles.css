@@ -401,21 +401,21 @@ input.button:hover {
 }
 
 #home-ledarskap {
-  background-image: url("/img/414ad0316b.png");
+  background-image: url("/img/ledarskap-hero.jpg");
   color: var(--cream);
 
   /* height: 200px; */
 }
 
 #home-kommunikation {
-  background-image: url("/img/Smiling\ charismatic\ speaker\ giving\ public\ presentation\ in\ conference\ hall.jpg");
+  background-image: url("/img/kommunikation-hero-resize.jpg");
   color: var(--cream);
 
   /* height: 200px; */
 }
 
 #home-kreativitet {
-  background-image: url("/img/20190405_065230741_iOS_edited1.jpg");
+  background-image: url("/img/20190405_065230741_iOS___serialized1.jpg");
   color: var(--cream);
 }
 
@@ -733,7 +733,7 @@ input.button:hover {
   }
 
   .wrap {
-    float: right;
+    float: left;
   }
 
   .footer-item {
