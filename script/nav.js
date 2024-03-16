@@ -14,7 +14,7 @@ class Nav extends HTMLElement {
         alt=""
     /></a>
     <div class="nav-items">
-      <a class="nav-item active" href="index.html">Hem</a>
+      <a class="nav-item" href="index.html">Hem</a>
       <a class="nav-item" href="ledarskap.html">Ledarskap</a>
       <a class="nav-item" href="kommunikation.html">Kommunikation</a>
       <a class="nav-item" href="kreativitet.html">Kreativitet</a>
