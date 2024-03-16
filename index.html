@@ -62,6 +62,7 @@
     <!-- scripts -->
 
     <script src="script/nav.js" type="text/javascript" defer></script>
+    <script src="script/footer.js" type="text/javascript" defer></script>
   </head>
 
   <body>
@@ -218,7 +219,10 @@
 
       <div class="section">
         <h2>Klienter</h2>
-          <p>Vi arbetar med individer, team och organisationer verksamma inom FMCG, industri, teknik, innovation, skog och finans.</p>
+        <p>
+          Vi arbetar med individer, team och organisationer verksamma inom FMCG,
+          industri, teknik, innovation, skog och finans.
+        </p>
       </div>
 
       <div class="section">
@@ -241,10 +245,14 @@
 
     <div id="footerSection"></div>
 
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+
     <script src="" async defer></script>
     <!-- Header/footer section script loads -->
 
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.3.js"
       integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
       crossorigin="anonymous"
@@ -254,6 +262,6 @@
       $(function () {
         $("#footerSection").load("footer.html");
       });
-    </script>
+    </script> -->
   </body>
 </html>
