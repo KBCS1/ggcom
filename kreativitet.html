@@ -11,19 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Header/footer section script loads -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      $(function () {
-        $("#footerSection").load("footer.html");
-      });
-    </script>
+    <!-- local css -->
 
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -36,6 +24,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -49,40 +38,6 @@
     <nav>
       <nav-component></nav-component>
     </nav>
-<!-- 
-    <div class="topnav cream">
-      <a href="index.html"><img
-          class="nav-logo"
-          src="img/GG-logo-symbol-141px-black.png"
-          height="30px"
-          alt="link to homepage"
-      /></a>
-      <div class="nav-items">
-        <a class="nav-item" href="index.html">Hem</a>
-        <a class="nav-item" href="ledarskap.html">Ledarskap</a>
-        <a class="nav-item" href="kommunikation.html">Kommunikation</a>
-        <a class="nav-item active" href="kreativitet.html">Kreativitet</a>
-        <a class="nav-item" href="contact.html">Kontakt</a>
-
-        <div class="ham-menu">
-          <nav id="navbar" class="navigation" role="navigation">
-            <input type="checkbox" id="toggle1" name="toggle1"/>
-            <label for="toggle1" class="hamburger1">
-              <div class="top"></div>
-              <div class="meat"></div>
-              <div class="bottom"></div>
-            </label>
-
-            <nav class="nav-menu">
-              <a class="link1" href="index.html">Hem</a>
-              <a class="link1" href="ledarskap.html">Ledarskap</a>
-              <a class="link1" href="kommunikation.html">Kommunikation</a>
-              <a class="link1" href="contact.html">Kontakt</a>
-            </nav>
-          </nav>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Hero section -->
 
@@ -174,13 +129,18 @@
       </div>
     </section>
 
-    <div id="footerSection"></div>
+<!-- Footer section -->
+
+<footer>
+  <footer-component></footer-component>
+</footer>
 
 <!-- scripts -->
 
 
     <script src="" async defer></script>
     <script src="script/nav.js" type="text/javascript" defer></script>
+    <script src="script/footer.js" type="text/javascript" defer></script>
     
   </body>
 </html>
