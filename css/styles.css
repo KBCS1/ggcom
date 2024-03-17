@@ -45,6 +45,11 @@ article {
   padding: 50px 15%;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -589,8 +594,14 @@ input.button:hover {
     padding: 10px 20px;
   }
 
+  #footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 8%;
+  }
+
   #footer-copyright {
-    padding: 20px 15%;
+    padding: 10px 8%;
   }
 }
 
