@@ -696,6 +696,14 @@ input.button:hover {
     justify-content: space-between;
   }
 
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    /* width: 350px; */
+  }
+
   .nav-item {
     display: none;
   }
@@ -722,15 +730,7 @@ input.button:hover {
     /* background-attachment: fixed; */
   }
 
-  .nav-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: end;
-    /* width: 350px; */
-  }
-
-  .intro-image {
+   .intro-image {
     min-width: 100px;
     max-width: 100%;
   }
