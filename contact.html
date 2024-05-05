@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<html lang="se">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -64,7 +64,7 @@
         <div>
           <div>
             <h1>Vi ser fram emot att få kontakt med dig.</h1>
-            <form method="post" action="https://www.codestudio.one/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};"> Ditt namn <br /> <input name="realname" /> <br /> Din e-postadress <br /> <input name="email" /> <br /> Meddelande <br /> <textarea cols="40" rows="10" name="Message"></textarea> <br /> <input class="button" type="submit" value="Skicka" /> <input type="hidden" name="recipient" value="hello@codestudio.one" /> <input type="hidden" name="subject" value="Subject" /> <input type="hidden" name="redirect" value="https://ggcom.codestudio.one/mailthanks.html" /> <input type="hidden" name="missing_fields_redirect" value="https://ggcom.codestudio.one/mailerror.html" /> <input type="hidden" name="required" value="realname,email,Message" /> </form>
+            <form method="post" action="/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};"> Ditt namn <br /> <input name="realname" /> <br /> Din e-postadress <br /> <input name="email" /> <br /> Meddelande <br /> <textarea cols="40" rows="10" name="Message"></textarea> <br /> <input class="button" type="submit" value="Skicka" /> <input type="hidden" name="recipient" value="kimberntson@mac.com" /> <input type="hidden" name="subject" value="Subject" /> <input type="hidden" name="redirect" value="https://ggcom.codestudio.one/mailthanks.html" /> <input type="hidden" name="missing_fields_redirect" value="https://ggcom.codestudio.one/mailerror.html" /> <input type="hidden" name="required" value="realname,email,Message" /> </form>
           </div>
         </div> 
       </main>
@@ -73,14 +73,13 @@
     <!-- Footer section -->
     
 <footer>
-  <navcomponent></navcomponent>
-</footer>
+  <footer-component></footer-component>
+</footer-compone>
       
 <!-- scripts -->
 
     <script src="" async defer></script>
-    <script src="script/nav.js" type="text/javascript" defer></script>
-    <script src="script/footer.js" type="text/javascript" defer></script>
+    <script src="script/components.js" type="text/javascript" async defer></script>
     
 
 
