@@ -5,33 +5,32 @@ class Nav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     
-    <div class="topnav cream">
-    <a href="index.html"
-      ><img
-        class="nav-logo"
-        src="img/GG-logo-symbol-141px-black.png"
-        height="30px"
-        alt=""/></a>
-    <div class="nav-items">
-      <a class="nav-item" href="index.html">Hem</a>
-      <a class="nav-item" href="ledarskap.html">Ledarskap</a>
-      <a class="nav-item" href="kommunikation.html">Kommunikation</a>
-      <a class="nav-item" href="kreativitet.html">Kreativitet</a>
-      <a class="nav-item" href="contact.html">Kontakt</a>
-      <div class="ham-menu">
-        <div id="navbar" class="navigation" role="navigation">
-          <input id="toggle1" type="checkbox" />
-          <label class="hamburger1" for="toggle1">
-            <div class="top"></div>
-            <div class="meat"></div>
-            <div class="bottom"></div>
-          </label>
-          <div class="nav-menu">
-            <a class="link1" href="ledarskap.html">Ledarskap</a>
-            <a class="link1" href="kommunikation.html">Kommunikation</a>
-            <a class="link1" href="kreativitet.html">Kreativitet</a>
-            <a class="link1" href="contact.html">Kontakt</a>
+    <div id="nav-bar" class="cream">
+      <a href="index.html"><img class="nav-logo" src="img/GG-logo-symbol-141px-black.png" height="30px" alt=""/></a>
+    
+      <div id="nav-items">
+        <a class="nav-item" href="index.html">Hem</a>
+        <a class="nav-item" href="ledarskap.html">Ledarskap</a>
+        <a class="nav-item" href="kommunikation.html">Kommunikation</a>
+        <a class="nav-item" href="kreativitet.html">Kreativitet</a>
+        <a class="nav-item" href="contact.html">Kontakt</a>
+      
+        <div id="hamburger">
+          <div id="ham-nav" class="navigation" role="navigation">
+            <input id="toggleHam" type="checkbox" />
+            <label class="hamburger" for="toggleHam">
+              <div class="top"></div>
+              <div class="meat"></div>
+              <div class="bottom"></div>
+            </label>
+          
+          <div id="hamburger-links">
+            <a class="ham-link" href="ledarskap.html">Ledarskap</a>
+            <a class="ham-link" href="kommunikation.html">Kommunikation</a>
+            <a class="ham-link" href="kreativitet.html">Kreativitet</a>
+            <a class="ham-link" href="contact.html">Kontakt</a>
           </div>
+
         </div>
       </div>
     </div>

@@ -139,11 +139,61 @@ input.button:hover {
   color: var(--bluegray);
 }
 
-/* Nav definitions */
+/* Navigation styling */
 
-/* Hamburger menu */
+/* nav-logo styling */
 
-.hamburger1 div {
+.nav-logo {
+  display: grid;
+  margin-left: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+/* nav-bar styling */
+
+#nav-bar {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-items: end;
+  align-content: center;
+  position: sticky;
+  height: 80px;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--cream);
+  color: var(--bluegray);
+}
+
+#nav-bar a.active {
+  color: var(--black);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* Nav-items styling */
+
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+
+
+/* Hamburger styling */
+
+#hamburger {
+  display: none;
+}
+
+.hamburger div {
   background-color: rgb(61, 61, 61);
   color: var(--bluegray);
   position: relative;
@@ -154,7 +204,9 @@ input.button:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.nav-menu {
+/* nav-menu styling */
+
+#hamburger-links {
   width: 100%;
   background-color: var(--bluegray);
   margin: 0;
@@ -175,55 +227,18 @@ input.button:hover {
   transition: all 0.3s ease;
 }
 
-.ham-menu {
-  display: none;
-}
-
-.nav-menu a:first-child {
+#hamburger-links a:first-child {
   margin: 0px;
 }
 
-.nav-menu a:last-child {
+#hamburger-links a:last-child {
   margin-bottom: 20px;
 }
 
-.topnav {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  justify-items: end;
-  align-content: center;
-  position: sticky;
-  height: 80px;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  background-color: var(--cream);
-  color: var(--bluegray);
-}
 
-.topnav a.active {
-  color: var(--black);
-  text-decoration: underline;
-  font-weight: bolder;
-}
 
-.nav-logo {
-  display: grid;
-  margin-left: 20px;
-  align-items: center;
-  align-content: center;
-}
 
-.nav-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: end;
-}
-
-.nav-item {
-  padding: 0 10px;
-}
+/* home-item styling */
 
 .home-item {
   display: flex;
@@ -405,28 +420,28 @@ input.button:hover {
 
 /* ----- Hamburger IDs ----- */
 
-#toggle1 {
+#toggleHam {
   display: none;
 }
 
-#toggle1:checked + .hamburger1 .top {
+#toggleHam:checked + .hamburger .top {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: 12.5px;
 }
 
-#toggle1:checked + .hamburger1 .meat {
+#toggleHam:checked + .hamburger .meat {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: -5px;
 }
 
-#toggle1:checked + .hamburger1 .bottom {
+#toggleHam:checked + .hamburger .bottom {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
-#toggle1:checked ~ .nav-menu {
+#toggleHam:checked ~ #hamburger-links {
   height: 240px;
   margin-top: 10px;
 }
@@ -509,11 +524,13 @@ input.button:hover {
     box-shadow: inset 0 0 0 1000px rgba(51, 82, 100, 0.65);
   }
 
+  /* Navigation styling */
+
   .nav-logo {
     margin: 10px 0 0 20px;
   }
 
-  .nav-items {
+  #nav-items {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -524,7 +541,7 @@ input.button:hover {
     display: flex;
   }
 
-  /* .ham-menu {
+  /* #hamburger {
       display:none;
   } */
 
@@ -671,13 +688,27 @@ input.button:hover {
     color: var(--bluegray);
   }
 
-  .topnav {
+  /* Navigation styling */
+
+  
+  .nav-logo {
+    margin: 10px 0 0 20px;
+  }
+
+
+  #nav-bar {
     display: flex;
     height: 50px;
     justify-content: space-between;
   }
 
-  .nav-items {
+  
+  #ham-nav {
+    width: 250px;
+  }
+
+
+  #nav-items {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -689,11 +720,13 @@ input.button:hover {
     display: none;
   }
 
-  .ham-menu {
+  /* hamburger styling */
+
+  #hamburger {
     display: flex;
   }
 
-  .hamburger1 {
+  .hamburger {
     height: 30px;
     margin: 10px 20px 10px 0;
     display: -ms-grid;
@@ -702,6 +735,26 @@ input.button:hover {
     justify-items: end;
     z-index: 200;
   }
+
+  
+  .ham-link {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font: 700 20px Montserrat, sans-serif;
+    color: var(--cream);
+    z-index: 200;
+  }
+
+  .ham-link:hover {
+    background-color: var(--cream);
+    color: var(--bluegray);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+
+
 
   .hero-image {
     background-repeat: no-repeat;
@@ -716,10 +769,6 @@ input.button:hover {
     max-width: 100%;
   }
 
-
-  .nav-logo {
-    margin: 10px 0 0 20px;
-  }
 
   .home-item {
     display: flex;
@@ -795,26 +844,6 @@ input.button:hover {
   .contact-item img {
     width: auto;
     padding: 10px 20px;
-  }
-
-  .link1 {
-    width: 100%;
-    margin: 5px;
-    padding: 10px;
-    font: 700 20px Montserrat, sans-serif;
-    color: var(--cream);
-    z-index: 200;
-  }
-
-  .link1:hover {
-    background-color: var(--cream);
-    color: var(--bluegray);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-
-  #navbar {
-    width: 250px;
   }
 
 
